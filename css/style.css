@@ -370,6 +370,79 @@
         background-color: #E7B3B3;
         color: white
       }
+      /* Definiciones giftcard */
+      .titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .titulo h3{
+        margin: 0;
+        margin: 0;
+        text-decoration: 1px underline #E7B3B3;
+        font-family: 'Montserrat', sans-serif;        
+      }
+      .titulo img{
+        width: 20%;
+        margin: 10px 0;
+      }
+      .titulo p{
+        margin: 0
+      }
+      .monto h3{
+        margin: 0;
+        margin: 0 0 10px 0;
+        text-decoration: 1px underline #E7B3B3;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;          
+      }
+      .costo{
+        text-align: center;
+      }
+      .container-giftcard{
+        display: grid;
+        margin: 20px 0 20px 0;                
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        text-align: center;
+      }
+      .container-giftcard input{
+        border: 1px solid #DEE2E6;
+        border-radius: 5px;
+        padding-left: 5px;     
+      }
+      
+      .container-1{
+        text-align: end;
+        margin-right: 50px;
+      }
+      .container-2{
+        text-align: start;
+        margin-left: 50px;
+      }
+      .boton-pago{        
+        display: flex;
+        justify-content: center;
+      }
+      .boton-pago p{
+        color: #E7B3B3;
+        background-color: #F8F9FA;
+        padding: 10px 30px;
+        border: 1px ;
+        border-radius: 5px;
+        margin: 0;
+        transition: 0.5s;
+      }
+      .boton-pago p:hover{
+        background-color: #E7B3B3;
+        color: white
+      }
+
+      .boton-pago a{
+        text-decoration: none;              
+      }
 
     
 /* Media Query Mobile */
@@ -386,11 +459,94 @@
         font-size: 9px;
         font-weight: bold;
     }
-
+    /* Definiciones nosotros */
+.grid-container {
+  margin: 0;
+  display: grid;        
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+.one-grid {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #f0efef;
+}
+.two-grid {
+  display: flex;
+  background-color: #f0efef;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;        
+}
+.grid-container-two {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(1, 1fr);
+  margin: 10px;
+  text-align: center;
+  gap: 10px;
+  padding: 0;
+}
+/* Definiciones galeria */
+.container-galeria{
+  display: none;
+}
+.mobile-2{
+  margin-top: 20px;
+}
+/* Definiciones reserva */
+.contenedor-reserva{
+  display: none;
+}
+.monto-reserva h3{
+  margin: 0;
+  margin: 10px 0 10px 0;
+  text-decoration: 1px underline #E7B3B3;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;  
+}
+.costo-reserva{
+  text-align: center;
+}
+.reserva-input input{
+  width: 100px;
+  margin: 10px 10px 30px 10px;
+  }
+  
+  .reserva-input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+        /*definiciones giftcard*/
+        .container-giftcard{
+          display: none;
+        }
+        .giftcard-mobile input{
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1px solid #DEE2E6;
+          padding: 5px;
+        }
+        .giftcard-mobile-1{
+          display: grid;
+          grid-column: 1;
+          grid-row: 4;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .giftcard-mobile-2{
+          display: grid;
+          grid-column: 1;
+          grid-row: 4;
+          text-align: center;
+          margin: 30px 0 20px 0;
+        }
 }
 /* Media Query Tablet */
 @media only screen and (min-width: 426px) and (max-width: 768px) {   
-    /* Definiciones para index */    
+    /* Definiciones index */    
      .img-fluid{
         width: 50%;
         margin-bottom: 5px;
@@ -414,6 +570,91 @@
         margin: 0;
         font-size: 10px;
     }
+
+/* Definiciones nosotros */
+.grid-container {
+  margin: 0;
+  display: grid;        
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+.one-grid {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #f0efef;
+}
+.two-grid {
+  display: flex;
+  background-color: #f0efef;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;        
+}
+.grid-container-two {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(1, 1fr);
+  margin: 10px;
+  text-align: center;
+  gap: 10px;
+  padding: 0;
+}
+/* Definiciones galeria */
+.Container-mobile{
+  display: none;  
+}
+/* Definiciones reserva */
+.contenedor-reserva{
+  display: none;
+}
+.monto-reserva h3{
+  margin: 0;
+  margin: 10px 0 10px 0;
+  text-decoration: 1px underline #E7B3B3;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;  
+}
+.costo-reserva{
+  text-align: center;
+}
+.reserva-input input{
+  width: 100px;
+  margin: 10px 10px 30px 10px;
+  }
+
+  .reserva-input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+    /*definiciones giftcard*/
+    .container-giftcard{
+      display: none;
+    }
+    .container-giftcard{
+      display: none;
+    }
+    .giftcard-mobile input{
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #DEE2E6;
+      padding: 5px;
+    }
+    .giftcard-mobile-1{
+      display: grid;
+      grid-column: 1;
+      grid-row: 4;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .giftcard-mobile-2{
+      display: grid;
+      grid-column: 1;
+      grid-row: 4;
+      text-align: center;
+      margin: 30px 0 20px 0;
+    }
 }
 
 /* Media Query Laptop */
@@ -429,6 +670,18 @@
     .footer-menu a{
         font-size: 12px;        
         padding: 3px 6px;  
+}
+/* Definiciones galeria */
+.Container-mobile{
+  display: none;  
+}
+/* Definiciones reserva */
+.reserva-mobile{
+  display: none;
+}
+/* Definiciones giftcard */
+.giftcard-mobile{
+  display: none;
 }
 
 }
@@ -450,7 +703,20 @@
     img .w-100{
         width: 20% !important;
     }
+    /*  Definiciones galeria */
+.Container-mobile{
+  display: none;  
 }
+/* Definiciones reserva */
+.reserva-mobile{
+  display: none;
+}
+/* Definiciones giftcard */
+.giftcard-mobile{
+  display: none;
+}
+}
+
 
 
 
