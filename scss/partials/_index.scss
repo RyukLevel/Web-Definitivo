@@ -1,0 +1,19 @@
+/* Definiciones Index */
+main .fila-index {
+  display: flex;
+  .img-fluid {
+    width: 35%;
+    margin-bottom: 5px;
+  }
+  .texto-img {
+    h3 {
+      margin: 5px 40px 10px 40px;
+      text-decoration: 1px underline #e7b3b3;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .texto-img p {
+    font-size: 24px;
+    margin: 0 300px 0 40px;
+  }
+}
