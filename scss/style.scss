@@ -1,3 +1,16 @@
-@import 'partials/reset';
-@import 'partials/footer';
-@import 'partials/index';
+/*Base*/
+@import "partials/reset";
+@import "partials/footer";
+@import "partials/index";
+@import "partials/nosotros_grid_uno";
+@import "partials/nosotros_grid_dos";
+@import "partials/galeria";
+@import "partials/reserva_img";
+@import "partials/reserva_forms";
+@import "partials/giftcard";
+
+/*Extend*/
+@import "componentes/botones";
+
+/*Media Querys*/
+@import "media_querys/mediaquery_mobile";

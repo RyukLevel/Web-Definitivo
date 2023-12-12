@@ -1,0 +1,61 @@
+/* Definiciones reserva forms */
+section {
+  .forms-container {
+    div .mb-3 {
+      display: flex;
+      margin: 0 !important;
+      align-items: center;
+    }
+    .forms-fecha {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      margin-top: 20px;
+      div {
+        margin-left: 30px !important;
+        width: 130px;
+      }
+      label {
+        font-weight: 500;
+        color: #e7b3b3;
+      }
+    }
+    .forms-horario {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      margin-top: 20px;
+      div {
+        margin-left: 20px !important;
+        width: 130px;
+      }
+      label {
+        font-weight: 500;
+        color: #e7b3b3;
+      }
+    }
+    .forms-personas {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      div {
+        margin-left: 6px !important;
+        width: 130px;
+      }
+      label {
+        font-weight: 500;
+        color: #e7b3b3;
+      }
+    }
+    .boton-reserva {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

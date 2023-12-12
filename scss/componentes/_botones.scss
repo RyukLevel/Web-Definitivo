@@ -1,0 +1,25 @@
+/*Componentes*/
+//nosotros
+.boton {
+  margin: 10px 0 0 0;
+  padding: 7px;
+  border-radius: 5px;
+  color: #e7b3b3;
+  transition: 0.5s;
+  &:hover {
+    background-color: #e7b3b3;
+    color: white;
+  }
+}
+//reserva
+.boton_2 {
+  @extend .boton;
+  background-color: #f8f9fa;
+  padding: 10px 30px;
+  margin: 0;
+}
+
+//giftcard
+.boton_3 {
+  @extend .boton_2;
+}

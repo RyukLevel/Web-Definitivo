@@ -1,0 +1,24 @@
+/* Definiciones Nosotros - Container dos */
+.grid-container-two {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  text-align: center;
+  gap: 10px;
+  padding: 0;
+  .grid-columnas {
+    color: black;
+    background-color: #f0efef;
+    opacity: 1;
+    padding: 50px;
+    h3 {
+      margin: 10px 0;
+      text-decoration: 1px underline #e7b3b3;
+      font-family: "Montserrat", sans-serif;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
