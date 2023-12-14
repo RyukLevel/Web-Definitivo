@@ -45,6 +45,7 @@ footer nav ul {
 }
 footer nav ul li .decoracion-none {
   text-decoration: none;
+  list-style: none;
 }
 footer nav ul li .img-redes {
   width: 30px;
