@@ -42,6 +42,12 @@ footer nav .footer-copy p {
 footer nav ul {
   margin: 0;
   padding-left: 12px !important;
+  text-decoration: none;
+  list-style: none;
+}
+footer nav ul li {
+  list-style: none;
+  text-decoration: none;
 }
 footer nav ul li .decoracion-none {
   text-decoration: none;

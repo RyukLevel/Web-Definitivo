@@ -20,8 +20,12 @@ footer {
     ul {
       margin: 0;
       padding-left: 12px !important;
+      text-decoration: none;
+      list-style: none;
       li {
-        .decoracion-none {
+        list-style: none;
+        text-decoration: none;
+        .decoracion-none {          
           text-decoration: none;
           list-style: none;
         }
