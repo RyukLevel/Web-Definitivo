@@ -1,37 +1,37 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   /* footer*/
   footer {
     .footer-nav {
       .footer-copy {
         padding-right: 12px;
-        font-size: 9px;
+        font-size: 10px;
         font-weight: bold;
       }
     }
     .footer-menu {
       ul {
-        display: none;
+        padding: 0 !important;
+        text-align: center;
+        word-spacing: 1px;
+        li {
+          a {
+            font-size: 12px;
+            padding: 3px 6px;
+          }
+        }
       }
     }
+  }
+  /* index */
+  .img-fluid {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .texto-img {
+    margin-left: 3px;
   }
 
-  /* index */
-  main .fila-index {
-    display: block;
-    .texto-img {
-      h3 {
-        font-size: 24px;
-        margin: 5px 0px 10px 3px;
-        text-decoration: 1px underline #e7b3b3;
-        font-family: "Montserrat", sans-serif;
-      }
-      p {
-        font-size: 16px;
-        margin: 0px 3px 16px 3px;
-      }
-    }
-  }
-  /* nosotros */
+  /* Definiciones nosotros */
   section.grid-container {
     margin: 0;
     display: grid;
@@ -51,6 +51,7 @@
       align-items: center;
     }
   }
+
   section.grid-container-two {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -60,14 +61,8 @@
     gap: 10px;
     padding: 0;
   }
-  /* galeria */
-  .container-galeria {
-    display: none;
-  }
-  .mobile-2 {
-    margin-top: 20px;
-  }
-  /* reserva */
+
+  /* Definiciones reserva */
   .contenedor-reserva {
     display: none;
   }
@@ -102,37 +97,31 @@
       }
     }
   }
-
-  /*giftcard*/
+  /*definiciones giftcard*/
   .container-giftcard {
     display: none;
   }
-  .giftcard-mobile {
-    .giftcard-mobile-1 {
-      display: grid;
-      grid-column: 1;
-      grid-row: 4;
-      text-align: center;
-      margin-top: 10px;
-      input {
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 1px solid #dee2e6;
-        padding: 5px;
-      }
-    }
-    .giftcard-mobile-2 {
-      display: grid;
-      grid-column: 1;
-      grid-row: 4;
-      text-align: center;
-      margin: 30px 0 20px 0;
-      input {
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 1px solid #dee2e6;
-        padding: 5px;
-      }
-    }
+  .container-giftcard {
+    display: none;
+  }
+  .giftcard-mobile input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+  }
+  .giftcard-mobile-1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .giftcard-mobile-2 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    margin: 30px 0 20px 0;
   }
 }

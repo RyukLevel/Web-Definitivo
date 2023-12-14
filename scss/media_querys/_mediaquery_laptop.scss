@@ -1,0 +1,48 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* footer*/
+  footer {
+    .footer-nav {
+      .footer-copy {
+        padding-right: 12px;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    }
+    .footer-menu {
+      ul {
+        li {
+          a {
+            font-size: 12px;
+            padding: 3px 6px;
+          }
+        }
+      }
+    }
+  }
+
+  /* index */
+
+  .img-fluid {
+    width: 60%;
+    margin-bottom: 5px;
+  }
+  main .fila-index {
+    .texto-img {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  /*  Definiciones galeria */
+  .Container-mobile {
+    display: none;
+  }
+  /* Definiciones reserva */
+  .reserva-mobile {
+    display: none;
+  }
+  /* Definiciones giftcard */
+  .giftcard-mobile {
+    display: none;
+  }
+}

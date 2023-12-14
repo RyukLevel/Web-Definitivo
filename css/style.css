@@ -71,18 +71,13 @@ footer .footer-menu ul li a:hover {
 main .fila-index {
   display: flex;
 }
-main .fila-index .img-fluid {
-  width: 35%;
-  margin-bottom: 5px;
-}
-main .fila-index .texto-img p {
-  font-size: 24px;
-  margin: 0 300px 0 40px;
-}
 main .fila-index .texto-img h3 {
-  margin: 5px 40px 10px 40px;
+  margin: 5px 0 10px 3px;
   text-decoration: 1px underline #e7b3b3;
   font-family: "Montserrat", sans-serif;
+}
+main .fila-index .texto-img p {
+  margin: 0px 3px 16px 3px;
 }
 
 /* Definiciones Nosotros - Container uno */
@@ -121,7 +116,7 @@ section .grid-container .two-grid .horarios a {
 }
 
 /* Definiciones Nosotros - Container dos */
-.grid-container-two {
+section.grid-container-two {
   display: grid;
   grid-template-rows: repeat(1, auto);
   grid-template-columns: repeat(3, 1fr);
@@ -130,18 +125,18 @@ section .grid-container .two-grid .horarios a {
   gap: 10px;
   padding: 0;
 }
-.grid-container-two .grid-columnas {
+section.grid-container-two .grid-columnas {
   color: black;
   background-color: #f0efef;
   opacity: 1;
   padding: 50px;
 }
-.grid-container-two .grid-columnas h3 {
+section.grid-container-two .grid-columnas h3 {
   margin: 10px 0;
   text-decoration: 1px underline #e7b3b3;
   font-family: "Montserrat", sans-serif;
 }
-.grid-container-two .grid-columnas p {
+section.grid-container-two .grid-columnas p {
   margin: 0;
 }
 
@@ -433,19 +428,316 @@ section .boton-pago a {
 }
 
 /*Media Querys*/
-/*  Mobile galeria */
-.Container-mobile {
-  display: none;
+@media only screen and (max-width: 425px) {
+  /* footer*/
+  footer .footer-nav .footer-copy {
+    padding-right: 12px;
+    font-size: 9px;
+    font-weight: bold;
+  }
+  footer .footer-menu ul {
+    display: none;
+  }
+  /* index */
+  main .fila-index {
+    display: block;
+  }
+  main .fila-index .texto-img h3 {
+    font-size: 24px;
+    margin: 5px 0px 10px 3px;
+    text-decoration: 1px underline #e7b3b3;
+    font-family: "Montserrat", sans-serif;
+  }
+  main .fila-index .texto-img p {
+    font-size: 16px;
+    margin: 0px 3px 16px 3px;
+  }
+  /* nosotros */
+  section.grid-container {
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.grid-container .one-grid {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #f0efef;
+  }
+  section.grid-container .two-grid {
+    display: flex;
+    background-color: #f0efef;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+  }
+  section.grid-container-two {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+    text-align: center;
+    gap: 10px;
+    padding: 0;
+  }
+  /* galeria */
+  .container-galeria {
+    display: none;
+  }
+  .mobile-2 {
+    margin-top: 20px;
+  }
+  /* reserva */
+  .contenedor-reserva {
+    display: none;
+  }
+  .reserva-mobile .monto-reserva .costo-reserva {
+    text-align: center;
+  }
+  .reserva-mobile .monto-reserva h3 {
+    margin: 0;
+    margin: 10px 0 10px 0;
+    text-decoration: 1px underline #e7b3b3;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .reserva-mobile .reserva-input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .reserva-mobile .reserva-input input {
+    width: 100px;
+    margin: 10px 10px 30px 10px;
+  }
+  .reserva-mobile .boton-reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reserva-mobile .boton-reserva a {
+    text-decoration: none;
+  }
+  /*giftcard*/
+  .container-giftcard {
+    display: none;
+  }
+  .giftcard-mobile .giftcard-mobile-1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .giftcard-mobile .giftcard-mobile-1 input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+  }
+  .giftcard-mobile .giftcard-mobile-2 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
+  .giftcard-mobile .giftcard-mobile-2 input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+  }
 }
-
-/*  MEDIA QUERYS - Definiciones reserva */
-.reserva-mobile {
-  display: none;
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* footer*/
+  footer .footer-nav .footer-copy {
+    padding-right: 12px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  footer .footer-menu ul {
+    padding: 0 !important;
+    text-align: center;
+    word-spacing: 1px;
+  }
+  footer .footer-menu ul li a {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  /* index */
+  .img-fluid {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .texto-img {
+    margin-left: 3px;
+  }
+  /* Definiciones nosotros */
+  section.grid-container {
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.grid-container .one-grid {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #f0efef;
+  }
+  section.grid-container .two-grid {
+    display: flex;
+    background-color: #f0efef;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+  }
+  section.grid-container-two {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+    text-align: center;
+    gap: 10px;
+    padding: 0;
+  }
+  /* Definiciones reserva */
+  .contenedor-reserva {
+    display: none;
+  }
+  .reserva-mobile .monto-reserva .costo-reserva {
+    text-align: center;
+  }
+  .reserva-mobile .monto-reserva h3 {
+    margin: 0;
+    margin: 10px 0 10px 0;
+    text-decoration: 1px underline #e7b3b3;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .reserva-mobile .reserva-input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .reserva-mobile .reserva-input input {
+    width: 100px;
+    margin: 10px 10px 30px 10px;
+  }
+  .reserva-mobile .boton-reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reserva-mobile .boton-reserva a {
+    text-decoration: none;
+  }
+  /*definiciones giftcard*/
+  .container-giftcard {
+    display: none;
+  }
+  .container-giftcard {
+    display: none;
+  }
+  .giftcard-mobile input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+  }
+  .giftcard-mobile-1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .giftcard-mobile-2 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
 }
-
-/* Definiciones giftcard */
-.giftcard-mobile {
-  display: none;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* footer*/
+  footer .footer-nav .footer-copy {
+    padding-right: 12px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  footer .footer-menu ul li a {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  /* index */
+  .img-fluid {
+    width: 60%;
+    margin-bottom: 5px;
+  }
+  main .fila-index .texto-img p {
+    font-size: 20px;
+  }
+  /*  Definiciones galeria */
+  .Container-mobile {
+    display: none;
+  }
+  /* Definiciones reserva */
+  .reserva-mobile {
+    display: none;
+  }
+  /* Definiciones giftcard */
+  .giftcard-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  /* index */
+  .img-fluid {
+    width: 35%;
+    margin-bottom: 5px;
+  }
+  main .fila-index .texto-img h3 {
+    margin: 5px 40px 10px 40px;
+    text-decoration: 1px underline #e7b3b3;
+  }
+  main .fila-index .texto-img p {
+    font-size: 24px;
+    margin: 0 300px 0 40px;
+  }
+  .texto-img img .w-100 {
+    width: 20% !important;
+  }
+  /*  galeria */
+  .Container-mobile {
+    display: none;
+  }
+  /* reserva */
+  .reserva-mobile {
+    display: none;
+  }
+  /* giftcard */
+  .giftcard-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 630px) {
+  /* galeria */
+  .container-galeria {
+    display: none;
+  }
+  .mobile-2 {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 631px) and (max-width: 768px) {
+  /* Definiciones galeria */
+  .Container-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
