@@ -1,2 +1,86 @@
 //orden de las imagenes al hacer hover
+@mixin seteo-imagen {
+  transform: scale(1.3);
+  border: 4px solid white;
+  transition: 3s;
+  position: relative;
+}
+@mixin posicion($arriba, $der, $abajo, $izquierda) {
+  top: $arriba;
+  right: $der;
+  bottom: $abajo;
+  left: $izquierda;
+}
 
+.container-galeria {
+  img {
+    &:hover {
+      @include seteo-imagen;
+      @include posicion(50px, 0px, 0px, 0px);      
+    }
+  }
+  .galeria-1 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(50px, 0px, 0px, 80px);
+      }
+    }
+  }
+  .galeria-4 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(50px, 82px, 0px, 0px);
+      }
+    }
+  }
+  .galeria-5 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(0px, 0px, 0px, 124px);
+      }
+    }
+  }
+  .galeria-8 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(0px, 82px, 0px, 0px);
+      }
+    }
+  }
+  .galeria-9 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(-50px, 0px, 0px, 82px);
+      }
+    }
+  }
+  .galeria-10 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(-50px, 0px, 0px, 0px);
+      }
+    }
+  }
+  .galeria-11 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(-50px, 0px, 0px, 0px);
+      }
+    }
+  }
+  .galeria-12 {
+    img {
+      &:hover {
+        @include seteo-imagen;
+        @include posicion(-50px, 43px, 0px, 0px);
+      }
+    }
+  }
+}

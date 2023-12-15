@@ -23,6 +23,7 @@
     }
   }
   /* index */
+
   .img-fluid {
     width: 50%;
     margin-bottom: 5px;
@@ -63,6 +64,14 @@
   }
 
   /* Definiciones reserva */
+  .container-index {
+    .flotante {
+      z-index: 1;
+      h4 {
+        margin-top: 20px;
+      }
+    }
+  }
   .contenedor-reserva {
     display: none;
   }

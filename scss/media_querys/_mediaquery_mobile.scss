@@ -68,6 +68,26 @@
     margin-top: 20px;
   }
   /* reserva */
+  .container-index {
+    .flotante {
+      z-index: 1;
+      transform: translate(8px, 460px);
+      padding-bottom: 10px;
+      &:hover {
+        transform: translate(8px, 440px);
+        transition: 1s;
+      }
+      h4 {
+        margin-top: 5px;
+        font-size: 16px;
+      }
+      p {
+        width: 300px;
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
   .contenedor-reserva {
     display: none;
   }
