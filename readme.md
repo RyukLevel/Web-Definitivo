@@ -67,3 +67,10 @@ Author: Rodrigo Cattalini <rcattalini.dg@gmail.com>
 Date:   Thu Dec 7 01:42:37 2023 -0300
 
     Web con paginas completas + responsive
+
+25/12 - Commit
+commit c3ee8d1e4a7bcc59ea5b559819348f48600e0b58 (HEAD -> master)
+Author: Rodrigo Cattalini <rcattalini.dg@gmail.com>
+Date:   Mon Dec 25 22:56:38 2023 -0300
+
+    Se agrega Meta Tags a todos los HTML
