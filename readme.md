@@ -74,3 +74,10 @@ Author: Rodrigo Cattalini <rcattalini.dg@gmail.com>
 Date:   Mon Dec 25 22:56:38 2023 -0300
 
     Se agrega Meta Tags a todos los HTML
+
+28/12 - Commit
+commit 2b1e721863ce076662b2d2d8ed08da92850c72c4 (HEAD -> master)
+Author: Rodrigo Cattalini <rcattalini.dg@gmail.com>
+Date:   Thu Dec 28 00:18:56 2023 -0300
+
+    se agrega favicon + se optimizan margenes en index y reserva + se completa texto en nosotros
