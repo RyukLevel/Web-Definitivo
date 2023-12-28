@@ -68,13 +68,13 @@
     margin-top: 20px;
   }
   /* reserva */
-  .container-index {
+  .container-reserva {
     .flotante {
       z-index: 1;
-      transform: translate(8px, 460px);
+      transform: translate(8px, 510px);
       padding-bottom: 10px;
       &:hover {
-        transform: translate(8px, 440px);
+        transform: translate(8px, 455px);
         transition: 1s;
       }
       h4 {
